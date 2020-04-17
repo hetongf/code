@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .js .expando-list{
+            overflow: hidden;
+            transition: all .25s ease-in-out   ;
+            max-width: 0;
+            opacity: 0;
+        }
+        .js .is-expanded .expando-list{
+            max-width: 24em;
+            opacity: 0;
+        }
+    </style>
+    <div class="expando">
+        <h2 class="expando-title">Top menu choices</h2>
+        <ol>
+            <li>Caricciosa</li>
+            <li>Margherita</li>
+            <li>Vesuvio</li>
+        </ol>
+        <ol class="expando-list" start="4" arir-label="Top menu choices,continued.">
+            <li>Calzone</li>
+            <li>Quattro Staglonl</li>
+            <li>Pescatore</li>
+            <li>Bolognese</li>
+            <li>Shawama</li>
+            <li>Mexicana</li>
+            <li>Fungl</li>
+        </ol>
+    </div>
+</html>

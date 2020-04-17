@@ -1,0 +1,12 @@
+#content #main h2{
+    color: gray;
+}
+div>#main>h2{
+    color:green;
+}
+#content>[id="main"].news-story:nth-of-type(1) h2.first{
+    color:hotpink;
+}
+:root [id="content"]:first-child>#main h2:nth-last-child(3){
+    color:gold;
+}

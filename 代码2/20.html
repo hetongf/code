@@ -1,0 +1,148 @@
+<html>
+    <style>
+         fieldset{
+            border: 0;
+            padding: 0.01px 0 0 0;
+            margin: 0;
+            min-width: 0;
+            display: table-cell;
+        }
+        .fieldset-wrapper{
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #eee;
+            background-color: #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.25);
+        }
+        :root .fieldset-wrapper{
+            border: 0;
+        }
+        legend{
+            padding:0 0 .5em 0;
+            font-weight: bold;
+            color: #777;
+            display: table;
+        }
+        input,textarea{
+            font: inherit;
+        }
+        .field-text{
+            display: flex;
+            max-width: 28em;
+        }
+        .field-text label{
+            flex: 0 0 8em;
+            display: flex;
+            align-items: center;
+
+        }
+        .field-prefix{
+            display: inline-block;
+            border-radius: .25em;
+        }
+        .field-prefixed input{
+            max-width: 12em;
+        }
+        .field-prefixed{
+            display: flex;
+        }
+        .field-prefix{
+            border-right: 0;
+            border-radius: .25em 0 0 .25em;
+            display: flex;
+            align-items: center;
+        }
+        .field-prefixed input{
+            max-width: 100%;
+            border-radius: 0 .25em .25em 0;
+        }
+        .checkboxes{
+            list-style: none;
+            padding: 0;
+            column-width: 10em;
+        }
+        .checkboxes li{
+            margin-bottom: .5em;
+        }
+    </style>
+        <form id="comments_form" action="/comments/" method="post">
+            <div class="fieldset-wrapper">
+                <fieldset>
+                    <legend>Your Contact Detail</legend>
+                    <p class="field field-text">
+                        <label for="comment-author">Name:</label>
+                        <input name="comment-author" id="comment-author" type="text">
+                    </p>
+                    <p class="field field-text">
+                        <label for="comment-email">Email Address:</label>
+                        <span class="field-prefixed">
+                            <span class="field-prefix" id="application-Twitter-prefix" aria-label="You can omit the @">@</span>
+                        </span>
+                        <input name="comment-email" id="comment-email" type="email">
+                    </p>
+                    <p class="field field-text">
+                        <label for="comment-url">Web Address:</label>
+                        <input name="comment-url" id="comment-url" type="url">
+                    </p>
+                </fieldset>
+            </div>
+            <div class="fieldset-wrapper">
+                <legend>Which languagues have you mastered</legend>
+                <ul class="checkboxes">
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">ActionScrip</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">C++</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">CSS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Java</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Python</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">BASIC</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Clojure</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Haskell</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">JavaScrip</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Ruby</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">C#</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">COBOL</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">HTML</label>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit">Send application</button>
+        </form>
+</html>

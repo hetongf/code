@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            figure{
+                background-color: #eee;
+                margin: 0;
+                padding: 1em;
+                float: right;
+                width: 50%;
+            }
+            .photo{
+                float: left;
+                width: 20%;
+            }
+            .author-image{
+                width: 50px;
+                height: 50px;
+            }
+            .author-image,.author-info{
+                display: inline-block;
+            }
+            .author-name,.author-email{
+                display: block;
+            }
+            .author-image,.author-info{
+                vertical-align: middle;
+            }
+            .author-meta{
+                width: 30%;
+                height: 10em;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+            .author-meta::before{
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+                margin-left: -.25em;
+            }
+            .author-info{
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>BBC News with Rosemary Crick.</h1>
+        <p>China has said it will increase military spending by about 7% this year. The scheduled announcement was made ahead of the annual National People's Congress in Beijing. It comes after President Trump outlined plans to increase USmilitary spending by almost 10%.</p>
+        <figure>
+            <img src="cat3.jpg" alt="the cat" width="300px" height="200px">
+            <img src="cat2.jpg" alt="the cat" class="photo">
+            <figcaption>The cat,created by tong.image from online</figcaption>
+        </figure>
+        <p>The campaign manager of the French Centre-Right presidential candidate Francis Fillon has quit in another blow to a campaign beset by allegations of corruption. Patrick Stefanini is the latest senior figure to abandon Mr.Fillon, who is embroiled in a scandal over payments to members of his family.Francis Fillon has insisted he will continue his bid for the French presidency.</p>
+        <p>A parliamentary committee in Britain, composed of members of the House of Lords, says the government will not be legally obliged to contribute to the European Union budget if it leaves without agreeing any exit deal. Other EU member states want Britain to pay its share of budget commitments before it leaves. Some EU officials estimate the amount could be as much as 69 billion euros.</p>
+        <p class="author-meta">
+            <img class="author-image" src="cat1.jpg" alt="author">
+            <span class="author-info">
+                <span class="author-name">written by Arthur C.Lacrk</span>
+                <a class="author-email" href="mailto:arthue.c.lark@example.com">arthur.c.lark@example.com</a>
+            </span>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+        .filp-wrapper{
+            position: relative;
+            transition: transform .25s ease-in-out;
+        }
+        .flip-b{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            transform: rotateY(-180deg);
+        }
+        .flip-b,.flio-a{
+            backface-visibility: hidden;
+        }
+        .filp-wrapper{
+            position: relative;
+            transition: all .25s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .filp-wrapper.is-filpped{
+            transform: rotateY(180deg);
+        }
+        .flip-b,.flio-a{
+            transition: transform .25s ease-in-out;
+        }
+        .flio-a{
+            transform: perspective(1000px) rotateY(0);
+        }
+        .flip-b{
+            transform: perspective(1000px) rotateY(-180deg);;
+        }
+        .filp-wrapper.is-filpped .flio-a{
+            transform: perspective(1000px) rotateY(180deg);
+        }
+        .filp-wrapper.is-filpped .flip-b{
+            transform: perspective(1000px) rotateY(0deg);;
+        }
+    </style>
+    <body>
+        <div class="flip-wrapper menu-wrapper">
+            <div class="flip-a menu">
+                <h1 class="menu-heading">Top menu choices</h1>
+                <ol class="menu-list">
+                    <li>Caricciosa</li>
+                    <li>Margherita</li>
+                    <li>Vesuvio</li>
+                    <li>Calzone</li>
+                    <li>Quattro Staglonl</li>
+                    <li>Pescatore</li>
+                    <li>Bolognese</li>
+                    <li>Shawama</li>
+                    <li>Mexicana</li>
+                    <li>Fungl</li>
+                </ol>
+            </div>
+            <div class="flip-b menu-settings">
+                <legend>Show only these pizzas</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Pizzas with meat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Pizzas with fish or seafood</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lang-as" id="lang-as">
+                        <label for="lang-as">Vegetarian pizzas</label>
+                    </li>
+                </ul>
+            </div>
+            <button type="submit">Show me pizzas</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <style>
+            .navbar li{
+                flex: 1 0 0%;
+            }
+            .navbar li:first-child{
+                flex-grow: 2;
+            }
+            .tags{
+                border:1px solid #C9E1F4;
+                margin:0;
+                padding: 1em;
+                list-style: none;
+            }
+            .tags li{
+                display: inline-block;
+                margin:.5em;
+                flex: 1 0 auto;
+            }
+            .comment{
+                position: relative;
+                display: block;
+                padding: .25em .5em .25em .25em;
+                background: #C9E1F4;
+                color: #28448f;
+                border-radius: 0 .25em .25em 0;
+                line-height: 1.5;
+                text-decoration: none;
+                text-align: center;
+            }
+            .comment:after{
+                position: absolute;
+                content:'';
+                width: 0;
+                height: 0;
+                border: 1em solid transparent;
+                border-right-width: .5em;
+                border-right-color: #c9e1f4;
+                left:-1.5em;
+                top:0;
+            }
+            .tags{
+                display: flex;
+                flex-wrap:wrap;
+                margin:0;
+                padding:0;
+                list-style: none;
+            }
+            .col{
+                min-width: 100px;
+                outline: 1px solid #666;
+                float: left;
+                box-sizing:border-box;
+                margin:0 0.9% 1.375;
+            }
+            .story{
+                padding: .6875em;
+                background-color: #eee;
+            }
+            .story img{
+                width: 100%;
+            }
+            .row-wrapping{
+                font-size: 0;
+                margin: 0 -11px;
+                margin: 0 -.6875rem;
+            }
+            .row-wrapping >*{
+                float: none;
+                vertical-align: top;
+                display: inline-block;
+                font-size: 16px;
+                font-size: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Important News</h1>
+            </div>
+        </header>
+        <nav role="navigation" class="navbar">
+            <div>
+                <ul class="tags">
+                    <li class="comment">Home</li>
+                    <li class="comment">WORLD</li>
+                    <li class="comment">LOCAL</li>
+                    <li class="comment">SPORTS</li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class='col'>
+                <article class="story">
+                    <img src="cat3.jpg" alt="cat">
+                    <h3>Cras suscipit nec leo id.</h3>
+                    <p>A drug given to pregnant women in 35 countries to protect them against malaria has also been shown to safeguard against sexually-transmitted infections. The study found that many of the estimated 2 million stillbirths and new-borne deaths which occur every year in Sub-Sahara Africa are linked to the mother having such infections.</p>
+                    <p>President Donald Trump says he has total confidence in the U.S. Attorney-General, Jeff Sessions, amid controversy about his meetings with the Russian envoy during last year's presidential campaign. Mr. Sessions has come under pressure since it emerged that he'd met the Russian Ambassador twice, despite telling the Senate on oath that he had not communicated with the Russians during the election campaign.</p>
+                </article>
+            </div>
+            <div class='col'>
+                <article class="story">
+                    <img src="cat2.jpg" alt="cat">
+                    <h3>Cras suscipit nec leo id.</h3>
+                    <p>A drug given to pregnant women in 35 countries to protect them against malaria has also been shown to safeguard against sexually-transmitted infections. The study found that many of the estimated 2 million stillbirths and new-borne deaths which occur every year in Sub-Sahara Africa are linked to the mother having such infections.</p>
+                    <p>President Donald Trump says he has total confidence in the U.S. Attorney-General, Jeff Sessions, amid controversy about his meetings with the Russian envoy during last year's presidential campaign. Mr. Sessions has come under pressure since it emerged that he'd met the Russian Ambassador twice, despite telling the Senate on oath that he had not communicated with the Russians during the election campaign.</p>
+                </article>
+            </div>
+            <div class='col'>
+                <article class="story">
+                    <img src="cat1.jpg" alt="cat">
+                    <h3>Cras suscipit nec leo id.</h3>
+                    <p>A drug given to pregnant women in 35 countries to protect them against malaria has also been shown to safeguard against sexually-transmitted infections. The study found that many of the estimated 2 million stillbirths and new-borne deaths which occur every year in Sub-Sahara Africa are linked to the mother having such infections.</p>
+                    <p>President Donald Trump says he has total confidence in the U.S. Attorney-General, Jeff Sessions, amid controversy about his meetings with the Russian envoy during last year's presidential campaign. Mr. Sessions has come under pressure since it emerged that he'd met the Russian Ambassador twice, despite telling the Senate on oath that he had not communicated with the Russians during the election campaign.</p>
+                </article>
+            </div>
+        </main>
+    </body>
+</html>

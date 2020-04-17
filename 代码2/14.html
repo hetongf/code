@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            .col{
+                float: left;
+                box-sizing:border-box;
+            }
+            .row-quartet>*{
+                width: 50%;
+            }
+            .row-trio>*{
+                width: 33.3333%;
+            }
+            .subcategory-content{
+                width:80%;
+            }
+            .subcategory-header{
+                width:20%
+            }
+            .subcategory-featured{
+                width:50%;
+            }
+            .story{
+                padding: .6875em;
+                background-color: #eee;
+            }
+            .story img{
+                width: 100%;
+            }
+            .col{
+                min-width: 100%;
+                outline: 1px solid #666;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="subcategory">
+            <div class="row">
+                <header class="col subcategory-header">
+                    <h2>Sub-section</h2>
+                </header>
+                <div class="col subcategory-content">
+                    <div class="row row-quartet">
+                        <div class="col subcategory-featured"></div>
+                        <div class="col"></div>
+                        <div></div>
+                    </div>
+                    <div class="row row-quartet">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class='col'></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subcategory"> 
+            <div class="row">
+                <header class="col subcategory-header"></header>
+                <div class="col subcategory-content">
+                    <div class="row row-trio">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </body>
+</html>
